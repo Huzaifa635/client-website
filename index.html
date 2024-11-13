@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Responsive Navbar</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="media.css">
+</head>
+<body>
+  <nav>
+    <ul class="sidebar">
+      <li onclick=hideSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 96 960 960" width="26"><path
+         d="m249 849-42-42 231-231-231-231 42-42 231 231 231-231 42 42-231 231 231 231-42 42-231-231-231 231Z"/></svg></a></li>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="Product.html">Products</a></li>
+      <li><a href="webuy.html">We Buy</a></li>
+      <li><a href="contactus.html">Contact Us</a></li>
+    </ul>
+    <ul>
+      <li id="logo"><a>Huzaifa <span style="color: #d95044;">Plastic</span> </a></li>
+      <li class="hideOnMobile"><a href="index.html">Home</a></li>
+      <li class="hideOnMobile"><a href="about.html">About</a></li>
+      <li class="hideOnMobile"><a href="Product.html">Products</a></li>
+      <li class="hideOnMobile"><a href="webuy.html">We Buy</a></li>
+      <li class="hideOnMobile"><a href="contactus.html">Contact Us</a></li>
+      <li class="menu-button" onclick=showSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 96 960 960"
+         width="26"><path d="M120 816v-60h720v60H120Zm0-210v-60h720v60H120Zm0-210v-60h720v60H120Z"/></svg></a></li>
+    </ul>
+  </nav>
+
+  <!-- Carousels -->
+
+
+  <div style="z-index: 1; margin-top: 0px; " id="carouselExample" class="carousel slide">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="01.png" class="d-block w-100" height="860px">
+      </div>
+      <div class="carousel-item">
+        <img src="02.png" class="d-block w-100" height="860px">
+      </div>
+    
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+
+ 
+  <div id="container">
+    <div id="landing-page-about-main">
+      <h1 id="landing-page-about-h">
+        About <span style="color:#d95044;">Us</span>
+      </h1>
+      <div id="landing-page-about">
+        <p >
+          Huzaifa Plastic is a leading plastic granules manufacturer with over
+          12 years of experience in the industry. We specialize in producing
+          high-quality plastic granules from recycled PP and super items,
+          including various colors such as red, green, blue, purple, brown,
+          and black. Our commitment to sustainability drives us to purchase
+          plastic waste and transform it into valuable products. With a focus
+          on competitive pricing and consistent quality, Huzaifa Plastic
+          serves as a reliable partner for businesses in need of affordable
+          and eco-friendly plastic granules.
+        </p>
+      </div>
+
+    <button id="btn1">Learn more</button>
+  </div>
+
+  <div">
+    <img id="about-img"
+      src="plastic pallet enhanced.png"/>
+      <!-- width="500px"
+      height="400px" -->
+  </div>
+
+</div>
+</div>
+
+<div id="green-img">
+  <img style="width: 100%;" src="landing carousels final_enhanced.png" alt="">
+</div>
+
+<div id="circular-img-m">
+  <h1 class="h1-heading" style="display: flex; justify-content: center;">
+    Circular <span style="color: #d95044;">Economy</span>
+  </h1>
+
+  <div id="circular-img">
+    <img src="circular-chart.png" alt="">
+  </div>
+</div>
+<!-- Cards -->
+<div >
+  <h1 class="h1-heading" style="display: flex; justify-content: center;">
+    Our<span style="color: #d95044;">Products</span>
+  </h1>
+
+<section class="Container-c">
+  <div class="card" >
+    <div class="card-image"> <img src="Blue Sample.jpg" alt=""></div>
+    <h2><b>Blue Super</b></h2>
+    <p></p>
+  </div>
+
+
+  <div class="card" >
+    <div class="card-image"> <img src="Green Sample.jpg" alt=""></div>
+    <h2><b>Green Super</b></h2>
+    <p></p>
+  </div>
+
+
+  <div class="card" >
+    <div class="card-image"><img src="Red Sample.jpg" alt=""></div>
+    <h2><b>Red Super</b></h2>
+    <p></p>
+  </div>
+
+  <div class="card" >
+    <div class="card-image"><img src="Grey Sample.jpg" alt=""></div>
+    <h2><b>Grey Super</b></h2>
+    <p></p>
+  </div>
+
+</section>
+
+<!-- Certifications -->
+
+<h1 class="h1-heading" style="display: flex; justify-content: center;">
+  Our<span style="color: #d95044;">Certifications</span>
+</h1>
+
+<div id="container2">
+  <div class="container2-child"> <img src="certificate-1.png" alt="" height="100px" width="200px" ></div>
+  <div class="container2-child"> <img src="certificate-2.png" alt="" height="100px" width="200px"></div>
+  <div class="container2-child"> <img src="certificate-3.png" alt="" height="100px" width="200px"></div>
+  <div class="container2-child"><img src="reach.png" alt=""          height="100px" width="200px"></div>
+ 
+</div>
+
+<div id="footer-main-div">
+
+  <div id="logo1">
+      <h1 class="contact-text-1" style="color: white;" id="logo3";>
+    Huzaifa<span id="logo3-c">Plastic</span>
+    </h1>
+  </div>
+  <div id="about-contact">
+<p id="Contact-text" class="contact-text-1">Address: Gali Number 48,Muhammadi Road,<br>Shershah , Karachi , Sindh <br> Pakistan
+<br>
+  <br>Phone: 03152248220,03132997090 <br> <br>Email: huzaifaplastic.pk@gmail.com
+</p>
+  </div>
+
+</div>
+
+<div id="container4-l">
+  <div id="last-div1" class="container4-l-child"><p class="lastdiv-gc" >©Copyright 2024 <span style="color: #d95044;">Huzaifa Plastic</span>
+  </span></p></div>
+  <div id="last-div2" class="container4-l-child"><p class="lastdiv-gc">Web Solution By <span style="color: #d95044;">Huzaifa</span></div></p>
+  <div id="last-div3" class="container4-l-child"> <img  id="lastdic-gcimg"src="w3.png" alt=""></div>
+</div>
+
+  <script > 
+
+function showSidebar(){
+    const sidebar = document.querySelector('.sidebar')
+    sidebar.style.display = 'flex'
+  }
+  function hideSidebar(){
+    const sidebar = document.querySelector('.sidebar')
+    sidebar.style.display = 'none'
+  }
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

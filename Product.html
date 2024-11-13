@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Responsive Navbar</title>
+  <link rel="stylesheet" href="product.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="media.css">
+</head>
+<body>
+  <nav>
+    <ul class="sidebar">
+      <li onclick=hideSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 96 960 960" width="26"><path
+         d="m249 849-42-42 231-231-231-231 42-42 231 231 231-231 42 42-231 231 231 231-42 42-231-231-231 231Z"/></svg></a></li>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="Product.html">Products</a></li>
+      <li><a href="webuy.html">We Buy</a></li>
+      <li><a href="contactus.html">Contact Us</a></li>
+    </ul>
+    <ul>
+      <li id="logo"><a>Huzaifa <span style="color: #d95044;">Plastic</span> </a></li>
+      <li class="hideOnMobile"><a href="index.html">Home</a></li>
+      <li class="hideOnMobile"><a href="about.html">About</a></li>
+      <li class="hideOnMobile"><a href="Product.html">Products</a></li>
+      <li class="hideOnMobile"><a href="webuy.html">We Buy</a></li>
+      <li class="hideOnMobile"><a href="contactus.html">Contact Us</a></li>
+      <li class="menu-button" onclick=showSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 96 960 960"
+         width="26"><path d="M120 816v-60h720v60H120Zm0-210v-60h720v60H120Zm0-210v-60h720v60H120Z"/></svg></a></li>
+    </ul>
+  </nav>
+  <h1 id="landing-page-about-h">
+    Our <span style="color:#d95044;">Products</span>
+  </h1>
+  <h2 class="h2-element">Super Regular</h2>
+
+  <section class="Container-c">
+    <div class="card" >
+      <div class="card-image"> <img src="Blue Sample.jpg" alt=""></div>
+      <h3><b>Blue Super</b></h3>
+      <p></p>
+    </div>
+  
+  
+    <div class="card" >
+      <div class="card-image"> <img src="Green Sample.jpg" alt=""></div>
+      <h3><b>Green Super</b></h3>
+      <p></p>
+    </div>
+  
+  
+    <div class="card" >
+      <div class="card-image"><img src="Red Sample.jpg" alt=""></div>
+      <h3><b>Red Super</b></h3>
+      <p></p>
+    </div>
+  
+    
+  
+  </section>
+
+  <h2 class="h2-element">                 </h2>
+  
+  <section class="Container-c">
+    <div class="card" >
+      <div class="card-image"> <img src="brown sample.jpg" alt=""></div>
+      <h3><b>Brown Super</b></h3>
+      <p></p>
+    </div>
+  
+    <div class="card" >
+        <div class="card-image"><img src="Grey Sample.jpg" alt=""></div>
+        <h3><b>Grey Super</b></h3>
+        <p></p>
+      </div>
+  
+    
+  
+</section>
+
+<h2 class="h2-element">super co poly (mixed with battery) Extra Stronger</h2>
+    
+<section class="Container-c">
+    <div class="card" >
+      <div class="card-image"> <img src="red co poly.jpg" alt=""></div>
+      <h3><b>Blue Co Poly Battery Grade</b></h3>
+      <p></p>
+    </div>
+  
+  
+    <div class="card" >
+      <div class="card-image"> <img src="Green co poly.jpg" alt=""></div>
+      <h3><b>Green Co Poly Battery Grade</b></h3>
+      <p></p>
+    </div>
+  
+  
+    <div class="card" >
+      <div class="card-image"><img src="grey co poly.jpg" alt=""></div>
+      <h3><b>Red Co Poly Battery Grade</b></h3>
+      <p></p>
+    </div>
+  
+    <div class="card" >
+        <div class="card-image"><img src="blue co poly.jpg" alt=""></div>
+        <h3><b>Grey Co Poly Battery Grade</b></h3>
+        <p></p>
+      </div>
+  
+  </section>
+  <h2 class="h2-element">   </h2>
+
+
+  <div id="footer-main-div">
+
+    <div id="logo1">
+        <h1 class="contact-text-1" style="color: white;" id="logo3";>
+      Huzaifa<span id="logo3-c">Plastic</span>
+      </h1>
+    </div>
+    <div id="about-contact">
+  <p id="Contact-text" class="contact-text-1">Address: Gali Number 48,Muhammadi Road,<br>Shershah , Karachi , Sindh <br> Pakistan
+  <br>
+    <br>Phone: 03152248220,03132997090 <br> <br>Email: huzaifaplastic.pk@gmail.com
+  </p>
+    </div>
+  
+  </div>
+  
+  <div id="container4-l">
+    <div id="last-div1" class="container4-l-child"><p class="lastdiv-gc" >©Copyright 2024 <span style="color: #d95044;">Huzaifa Plastic</span>
+    </span></p></div>
+    <div id="last-div2" class="container4-l-child"><p class="lastdiv-gc">Web Solution By <span style="color: #d95044;">Huzaifa</span></div></p>
+    <div id="last-div3" class="container4-l-child"> <img  id="lastdic-gcimg"src="w3.png" alt=""></div>
+  </div>
+
+
+  <script > 
+
+    function showSidebar(){
+        const sidebar = document.querySelector('.sidebar')
+        sidebar.style.display = 'flex'
+      }
+      function hideSidebar(){
+        const sidebar = document.querySelector('.sidebar')
+        sidebar.style.display = 'none'
+      }
+      </script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    </body>
+    </html>
+
+  

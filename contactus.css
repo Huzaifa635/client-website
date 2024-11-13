@@ -1,0 +1,318 @@
+*{
+    margin: 0;
+    padding: 0;
+    
+  }
+  body{
+    /* min-height: 100vh;
+    background: url('laptop.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center; */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  nav{
+    background-color: white;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.1);
+  }
+  nav ul{
+    width: 100%;
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    font-size: 20px;
+    font-weight: bold;
+  }
+  nav li{
+    height: 50px;
+  }
+  nav a{
+    height: 100%;
+    padding: 0 30px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    color: black;
+  }
+  nav a:hover{
+    background-color: #f0f0f0;
+  }
+  nav li:first-child{
+    margin-right: auto;
+  }
+  .sidebar{
+    position: fixed;
+    top: 0; 
+    right: 0;
+    height: 100vh;
+    width: 250px;
+    background-color: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(12px);
+    box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
+    list-style: none;
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    position: absolute;
+    justify-content: flex-start;
+    z-index: 2;
+  }
+  .sidebar li{
+    width: 100%;
+  }
+  .sidebar a{
+    width: 100%;
+  }
+  .menu-button{
+    display: none;
+  }
+  #logo{
+    font-size: 32px;
+  }
+
+  #landing-page-about-h {
+    font-family: sans-serif;
+    font-size: 60px;
+    font-weight: bold;
+    color: black;
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  h2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    font-size: 40px;
+    color: black;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin-top: 500px;
+  }
+  .h2-element{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    font-size: 50px;
+    color: black;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin-top: 100px;
+    margin-bottom: 100px;
+  }
+  /* #contact-us-main{
+    border:2px solid black;
+    display: inline;
+    justify-content: center;
+    align-items: center;
+  }
+  .contact-us-c{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    margin: 5px;
+  } */
+
+  /* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f7f7f7;
+  }
+  
+  .contact-container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  
+  .contact-heading {
+    text-align: center;
+    color: #333;
+  }
+  
+  .highlighted-text {
+    color: #d95044;
+  }
+  
+ 
+  .contact-section {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+
+  
+  .inquiry-form {
+    flex: 1 1 48%;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .form-title {
+    text-align: center;
+    color: #d95044;
+  }
+  
+  form label {
+    display: block;
+    margin-top: 10px;
+  }
+  
+  form input, form textarea {
+    width: 100%;
+    padding: 12px;
+    margin-top: 5px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+  }
+  
+  form button.submit-btn {
+    width: 100%;
+    padding: 12px;
+    background-color: #d95044;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    margin-top: 10px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  form button.submit-btn:hover {
+    background-color: #b13c35;
+  }
+  
+  
+  .map-section {
+    flex: 1 1 48%;
+    position: relative;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .map-title {
+    text-align: center;
+    color: #d95044;
+    margin-top: 10px;
+  }
+  
+ 
+  .contact-info {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .info-title {
+    text-align: center;
+    color: #d95044;
+  }
+  
+  .contact-info p {
+    text-align: center;
+    margin: 5px 0;
+  }
+  
+  #footer-main-div {
+    background: url(light\ blue\ backgrond.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    gap: 500px;
+  }
+  #logo1{
+  display: flex;
+  justify-content: center;
+  align-items:center;
+  height: auto;
+  width: 100%;
+  min-height: 500px;
+  color: white;
+  
+  
+  position: relative;
+  
+  }
+  #about-contact{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 400px;
+  width: 100%;
+  
+  flex-direction: column;
+  
+  
+  }
+  #Contact-text{
+    font-size: 20px;
+    color: white;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
+    
+  }
+  #logo3{
+    font-size: 50px;
+    color: white;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-align: center;
+    font-family: sans-serif;
+  font-size: 60px;
+  font-weight: bold;;}
+  #logo3-c{
+    font-weight: 100;
+    
+  
+  }
+  #container4-l{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    gap: 100px;
+    height: 50px;
+    width: 100%;
+    background-color: #01465a;
+    align-items: center;
+    padding: 30px;
+    
+  }
+  .container4-l-child{
+    height: 30px;
+    width:400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+  }
+  .lastdiv-gc{
+    font-size: 16px;
+    color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  
+  }
+  #lastdic-gcimg{
+    height: auto;
+    width: 100px;
+  }
+  
+  
+  
